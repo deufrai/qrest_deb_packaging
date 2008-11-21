@@ -1,0 +1,8 @@
+[Desktop Entry]
+Name=Qrest
+Comment=Really Easy Studio Toolkit
+Exec=qrest
+Icon=/usr/share/qrest/icons/qresticon.png
+Type=Application
+Categories=AudioVideo;Audio;
+

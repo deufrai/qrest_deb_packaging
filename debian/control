@@ -1,0 +1,18 @@
+Source: qrest
+Section: sound
+Priority: optional
+Maintainer: Frédéric CORNU <fcornu@wardsback.org>
+Build-Depends: debhelper (>= 5), libqt4-dev (>= 4.3.2)
+Standards-Version: 3.7.2
+
+Package: qrest
+Architecture: any
+Depends: libqt4-core (>= 4.3.2), libqt4-gui (>= 4.3.2)
+Description: set of tools for calculations about musical values
+ Qrest is a toolbox aimed at music production people. It is a GUI application
+ written in C++ and using the Qt libraries.
+ .
+ It helps guessing the tempo of a musical piece, and getting the period in 
+ millisecond (and related frequency) of the most common notes durations. It 
+ also handles common note variations like dotted notes and triplets.
+
