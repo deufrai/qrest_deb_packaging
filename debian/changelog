@@ -1,3 +1,9 @@
+qrest (0.4.2-1wardsback) unstable; urgency=low
+
+  * we are definitly not building a proper Debian package. It MUST show in the package name
+
+ -- Frédéric CORNU <fcornu@wardsback.org>  Thu, 12 Apr 2012 23:57:42 +0200
+
 qrest (0.4.2) unstable; urgency=low
 
   * update to 0.4.2 upstream
