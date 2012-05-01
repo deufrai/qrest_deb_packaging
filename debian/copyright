@@ -1,13 +1,13 @@
 This package was debianized by Frédéric CORNU <fcornu@wardsback.org> on
-Fri, 21 Nov 2008 12:08:22 +0100.
+Tue, 01 May 2012 19:21:19 +0200.
 
-It was downloaded from http://www.qrest.org/dls/v0.4/final/sources/tar.gz/qrest-0.4.tar.gz
+It was downloaded from https://github.com/deufrai/Qrest/tarball/0.5.0
 
 Upstream Author: Frédéric CORNU <fcornu@wardsback.org>
 
 Copyright: 
     
-    Copyright (C) 2008 Frédéric CORNU, Wardsback Brotherhood
+    Copyright (C) 2008-2012 Frédéric CORNU, Wardsback Brotherhood
 
 License:
 
@@ -27,6 +27,6 @@ License:
 On Debian systems, the complete text of the GNU General Public
 License can be found in the file `/usr/share/common-licenses/GPL-3'.
 
-The Debian packaging is (C) 2008, Frédéric CORNU <fcornu@wardsback.org> and
+The Debian packaging is (C) 2012, Frédéric CORNU <fcornu@wardsback.org> and
 is licensed under the GPL, see `/usr/share/common-licenses/GPL'.
 
