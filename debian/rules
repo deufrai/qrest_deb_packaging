@@ -16,7 +16,7 @@ configure: configure-stamp
 configure-stamp:
 	dh_testdir
 	# Add here commands to configure the package.
-	qmake-qt4
+	qmake-qt4 qrest.pro
 	touch configure-stamp
 
 
