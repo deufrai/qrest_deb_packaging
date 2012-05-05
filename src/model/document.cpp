@@ -29,12 +29,14 @@
 
 Document* Document::_instance = 0;
 
-Document::Document()
+Document::Document() 
 : _tempo(Constants::TEMPO_DEFAULT),
   _steady(true),
   _steadiness(FULL_STEADINESS),
-  _tempoFromTap(false),
-  _multiplier(MULTIPLIER_PLAIN) {
+  _tempoSource(TEMPO_SOURCE_KEYBOARD),
+  _multiplier(MULTIPLIER_PLAIN),
+  _midiClockRunning(false),
+  _triggerEvent(0) {
 
     // init vector of Delay objects
     initDelays();

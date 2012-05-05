@@ -19,8 +19,11 @@
 
 #include "constants.h"
 
-const char* Constants::VERSION_STRING = "0.5.0";
+const char* Constants::VERSION_STRING = "0.6-beta-1";
+const char* Constants::MIDI_ENGINE_NAME = "qrest";
 
+const QString Constants::MIDI_TYPE_NOTE = "N";
+const QString Constants::MIDI_TYPE_PC   = "PC";
 
 Constants::Constants() {
 

@@ -24,7 +24,15 @@ Settings* Settings::_instance = 0;
 const char* Settings::WINDOW_POSITION = "windowPosition";
 const char* Settings::REMEMBER_WINDOW_POSITION = "rememberWindowPosition";
 
-Settings::Settings()
+const char* Settings::MIDI_PORT_NAME = "midiPortName";
+const char* Settings::MIDI_PORT_NAME_DEFAUT = "Qrest MIDI IN";
+
+const char* Settings::MIDI_DEVICE = "midiDevice";
+const char* Settings::MIDI_DEVICE_DEFAULT = "neverused";
+
+const char* Settings::MIDI_TRIGGER_EVENT = "triggerEvent";
+
+Settings::Settings() 
 : _settings("wardsback", "qrest") {
 
 }
@@ -43,8 +51,3 @@ Settings* Settings::getInstance() {
     return _instance;
 }
 
-void Settings::destroy() {
-
-    delete _instance;
-    _instance = 0;
-}

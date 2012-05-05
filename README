@@ -12,9 +12,9 @@ Website : http://www.qrest.org
 
 ---
 
-Code is C++ and relies on the Qt framework for GUI
+Code is C++ and relies on the Qt framework
 
-All non-GUI code is Qt-free, with the only exception of the timer used for TAPTEMPO feature. (We would most gladly welcome a portable FIXME for this one)
+For GNU/Linux, there is an extra build-dependency : libasound2-dev (package name for Debian derivatives)
 
 ---
 
@@ -25,8 +25,9 @@ Mirrored by    : git://wardsback.org/qrest
 ================
 
 - master : latest stable, production release
-- releases-### : feature-frozen version under tests for next release + maintenance code, once release ### has gone live
+- releases/### : feature-frozen version under tests for next ### release + maintenance code, once release ### has gone live
 - dev : unscheduled / experimental code for future features & releases
+- topic/* : topic branches mainly named after associated bugtracker's feature reference
 
 
 PEACE and Think ! It ain't illegal yet !

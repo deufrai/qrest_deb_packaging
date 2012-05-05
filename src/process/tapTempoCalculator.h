@@ -71,11 +71,6 @@ public:
      */
     static TapTempoCalculator* getInstance();
 
-    /**
-     * Destroy the only instance.
-     */
-    static void destroy();
-
     ////////////////////////////////////////////////////////////////////////////
     //
     // INTERFACE
