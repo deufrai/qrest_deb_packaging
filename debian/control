@@ -2,17 +2,22 @@ Source: qrest
 Section: sound
 Priority: optional
 Maintainer: Frédéric CORNU <fcornu@wardsback.org>
-Build-Depends: debhelper (>= 5), libqt4-dev (>= 4.3.2)
+Build-Depends: debhelper (>= 5), libqt4-dev (>= 4.3.2), libasound2-dev (>= 1.0.24)
 Standards-Version: 3.7.2
 
 Package: qrest
 Architecture: any
-Depends: libqt4-core (>= 4.3.2), libqt4-gui (>= 4.3.2)
+Depends: libqt4-core (>= 4.3.2), libqt4-gui (>= 4.3.2), libasound2 (>= 1.0.24)
 Description: set of tools for calculations about musical values
  Qrest is a toolbox aimed at music production people. It helps guessing
  the tempo of a musical piece, and getting the period in millisecond
  (and related frequency) of the most common notes durations, according
  to tempo. It also handles common note variations like dotted notes and
  triplets.
+ .
+ TAPTEMPO feature can be triggered by mouse clicks, keyboard shortcut and
+ MIDI events (Note ON & Program Change).
+ .
+ BPM value can be synchronized to an external MIDI Clock source.
  .
  It is a GUI application written in C++ and using the Qt libraries.

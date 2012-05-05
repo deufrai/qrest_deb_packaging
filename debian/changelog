@@ -1,3 +1,9 @@
+qrest (0.6.0-beta-1-1wardsback) unstable; urgency=low
+
+  * updated to new upstream 
+
+ -- Frédéric CORNU <fcornu@wardsback.org>  Sat, 05 May 2012 23:40:37 +0200
+
 qrest (0.5.0-2wardsback) unstable; urgency=low
 
   * fixed debian/copyright
