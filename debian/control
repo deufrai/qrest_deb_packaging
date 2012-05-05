@@ -2,12 +2,12 @@ Source: qrest
 Section: sound
 Priority: optional
 Maintainer: Frédéric CORNU <fcornu@wardsback.org>
-Build-Depends: debhelper (>= 5), libqt4-dev (>= 4.3.2), libasound2-dev (>= 1.0.24)
+Build-Depends: debhelper (>= 5), libqt4-dev (>= 4.3.2), libasound2-dev (>= 1.0.22)
 Standards-Version: 3.7.2
 
 Package: qrest
 Architecture: any
-Depends: libqt4-core (>= 4.3.2), libqt4-gui (>= 4.3.2), libasound2 (>= 1.0.24)
+Depends: libqt4-core (>= 4.3.2), libqt4-gui (>= 4.3.2), libasound2 (>= 1.0.22)
 Description: set of tools for calculations about musical values
  Qrest is a toolbox aimed at music production people. It helps guessing
  the tempo of a musical piece, and getting the period in millisecond
