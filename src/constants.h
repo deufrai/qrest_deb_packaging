@@ -19,6 +19,7 @@
 
 #ifndef CONSTANTS_H_
 #define CONSTANTS_H_
+#include <QString>
 
 /**
  * Stores application-wide constants.
@@ -46,19 +47,6 @@ public:
     static const char* VERSION_STRING;
 
     /**
-     * String describing path to i18n folder.
-     *
-     * It may be expressed as a relative path from where bianry is,
-     * or absolutely.
-     */
-    static const char* I18N_FOLDER_LOCATION;
-
-    /**
-     * String describing path to online help.
-     */
-    static const char* ONLINE_HELP_LOCATION;
-
-    /**
      * targetted steadiness ration for taps to be considered steady
      */
     static const double STEADINESS_TARGET_RATIO = 0.90;
@@ -74,9 +62,9 @@ public:
     static const double PROGRESSPIE_FULL = 1.0;
 
     /**
-     * temp messages are shown for 1.5 seconds
+     * temp messages are shown for 2 seconds
      */
-    static const int STATUSBAR_TEMP_TIMEOUT = 1500;
+    static const int STATUSBAR_TEMP_TIMEOUT = 2000;
 
     /** Default tempo for app startup */
     static const double TEMPO_DEFAULT = 60.0;
@@ -89,6 +77,29 @@ public:
 
     /** Size (in points) of widget fonts for mac */
     static const int MAC_FONT_SIZE = 13;
+
+    /** How many MIDI CLock events in a quarter note ? */
+    static const int MIDI_CLOCK_EVENTS_PER_QUARTER = 24;
+
+    /**
+     * How many milliseconds without recieving a midi clock event
+     * before considering that synchro is lost ?
+     *
+     * 170 ms is roughly the time ellapsed between two MidiClock events at 15 BPM
+     * which is sloooooooow enough
+     **/
+    static const int MIDI_SYNC_TIMEOUT_MS = 170;
+
+    /**
+     * default name of our MIDI engine
+     */
+    static const char* MIDI_ENGINE_NAME;
+
+    /** flag used to represent a MidiNoteOn when serialized to QStringList */
+    static const QString MIDI_TYPE_NOTE;
+
+    /** flag used to represent a MidiProgramChange when serialized to QStringList */
+    static const QString MIDI_TYPE_PC;
 
 };
 

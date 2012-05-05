@@ -76,6 +76,21 @@ public:
     /** key used to store 'remember window position' flag default value. */
     static const bool REMEMBER_WINDOW_POSITION_DEFAULT = false;
 
+    /** key used to store MIDI port name */
+    static const char* MIDI_PORT_NAME;
+
+    /** key used to store MIDI port default name */
+    static const char* MIDI_PORT_NAME_DEFAUT;
+
+    /** key used to store MIDI device name */
+    static const char* MIDI_DEVICE;
+
+    /** key used to store MIDI device name when MIDI has never been used */
+    static const char* MIDI_DEVICE_DEFAULT;
+
+    /** key used to store the TAP MIDI trigger event */
+    static const char* MIDI_TRIGGER_EVENT;
+
     ////////////////////////////////////////////////////////////////////////////
     //
     // INTERFACE
@@ -89,10 +104,6 @@ public:
      */
     static Settings* getInstance();
 
-    /**
-     * Release memory.
-     */
-    static void destroy();
 
     ////////////////////////////////////////////////////////////////////////////
     //

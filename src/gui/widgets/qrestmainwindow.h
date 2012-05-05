@@ -23,6 +23,7 @@
 #include <QtGui/QMainWindow>
 #include "../forms/ui_qrestmainwindow.h"
 #include "../../dp/observer.h"
+#include "../../midi/midicontroller.h"
 
 class Document;
 class ProgressPie;
@@ -116,17 +117,57 @@ private slots:
     void on_actionHelp_triggered();
 
     /**
+     * Slot that gets called when 'freewheel' radio button is clicked
+     */
+    void on_freewheelRadio_clicked();
+
+    /**
+     * Slot that gets called when 'MIDI sync' radio button is clicked
+     */
+    void on_syncRadio_clicked();
+
+    /**
+     * Slot that gets called when 'MIDI TapTempo' radio button is clicked
+     */
+    void on_triggerRadio_clicked();
+
+    /**
      * Makes sure help viewer is on front.
      */
     void raiseHelp();
 
-private:
+    /**
+     * A MIDI Clock timeout has been detected
+     */
+    void onTimeout();
+
+    /**
+     * entered freewheel mode
+     */
+    void onFreewheel();
+
+    /**
+     * entered trigger mode
+     */
+    void onTrigger();
+
+    /**
+     * entered learn mode
+     */
+    void onLearn();
+
+    /**
+     * entered sync mode
+     */
+    void onSync();
 
     ////////////////////////////////////////////////////////////////////////////
     //
     // EVENT HANDLERS
     //
     ////////////////////////////////////////////////////////////////////////////
+
+private:
     /**
      * Custom event handler used for tempo edit field and mousewheel events
      *
@@ -146,7 +187,7 @@ private:
 
     ////////////////////////////////////////////////////////////////////////////
     //
-    // FUNCTIONS
+    // PRIVATE FUNCTIONS
     //
     ////////////////////////////////////////////////////////////////////////////
     /**
@@ -187,6 +228,36 @@ private:
      * Refresh LFO display fields.
      */
     void updateLfoDisplays(void);
+
+    /**
+     * We check if we have a configured MIDI trigger.
+     *
+     * If not, we display a warning message and redirect
+     * the user to the trigger setup dialog.
+     *
+     * @return true if we have a trigger or user sets one up
+     *         and falsa if user fails to provide one
+     */
+    bool checkIfTriggerModePossible();
+
+    /**
+     * En/Dis-able tempo input related UI controls
+     *
+     * @param enabled : well .... you know ...
+     */
+    void setTempoInputControlsEnable(bool enabled);
+
+    /**
+     * Display an error message on midi reset or openport failure
+     */
+    void errorMidiDevice();
+
+    /**
+     * En-Dis/able midi GUI controls
+     *
+     * @param enable should controls be enabled (true by default)
+     */
+    void setMidiControlsEnable(bool enable = true);
 
     ////////////////////////////////////////////////////////////////////////////
     //

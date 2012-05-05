@@ -1,6 +1,11 @@
+v0.6
+====
+    * added MIDI CLock Synchro to recieve BPM from your favourite sequencer
+    * TAPTEMPO can now be triggered by MIDI events (Note ON & Program Change)
+    * Builds, run & looks fine on OSX
 v0.5
 ====
-	* remember main window position.
+    * remember main window position.
     * changed layout to hrizontal
     * steadiness indicator is now progressive
     
@@ -12,11 +17,6 @@ v0.4
 ====
     Application now provides an online help, translated into "en" and "fr"
     All app windows and Win32 executable have an icon now
-    Added UI translations for spanish and portuguese (userguide translator needed! )
-    
-    Closed bugs : 
-        Bug 1
-        Bug 2
 
 v0.3
 ====

@@ -53,12 +53,6 @@ TapTempoCalculator* TapTempoCalculator::getInstance() {
     return _instance;
 }
 
-void TapTempoCalculator::destroy() {
-
-    delete _instance;
-    _instance = 0;
-}
-
 ////////////////////////////////////////////////////////////////////////////////
 //
 // INTERFACE
@@ -80,7 +74,6 @@ void TapTempoCalculator::process() {
     _deltas.pop_front();
 
     // are deltas steady ?
-    pDocument->setTempoFromTap(true);
     getSteadiness();
 
     // set tempo according to average
