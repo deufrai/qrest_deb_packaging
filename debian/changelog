@@ -1,3 +1,9 @@
+qrest (0.6.0-beta-1-2wardsback) unstable; urgency=low
+
+  * Revised deps version for libasound2{,-dev} so this can build & run on a regular 10.04 Ubuntu without alsa backports
+
+ -- Frédéric CORNU <fcornu@wardsback.org>  Sat, 06 May 2012 00:13:40 +0200
+
 qrest (0.6.0-beta-1-1wardsback) unstable; urgency=low
 
   * updated to new upstream 
